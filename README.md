@@ -21,7 +21,7 @@ If you’re looking for a super-customized installer that removes bloatware and 
 
 ---
 
-## 🤔 What is `autounattend.xml`?
+## 🤔 What is `autounattend.xml` (and what it does *not* do)
 
 Think of `autounattend.xml` as a little helper script for Windows Setup.
 
@@ -30,6 +30,8 @@ When you boot from a USB, Windows looks for this file to see if it should skip o
 > "Hey, don’t worry about TPM, Secure Boot, RAM, storage, CPU, or disk checks. Just install like normal."
 
 That's it! No hacks, no shady software. Windows setup just skips the checks and installs like usual.
+
+> **💡 Note:** This file does **not** fully automate the Windows installation. You’ll still go through the normal setup screens, choose partitions, editions, and configure everything yourself. The only thing it does automatically is insert registry keys before installation to skip unsupported hardware checks.
 
 ---
 
